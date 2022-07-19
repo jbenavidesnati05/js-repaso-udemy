@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 2</title>
+</head>
+<body>
+    <h1>Formulario 2</h1>
+    
+    <form id="formulario">
+        <input id="nombre" type="text" name="nombre" value="juan">
+        <br>
+        <input id="apellido" type="text" name="apellido" value="valdes">
+    </form>
+    <button id="" onclick="mostrarValores()" >Mostrar</button>
+    <div id="valores"></div>
+    
+    <script>
+        let nombre = document.getElementById("nombre").value;
+        let apellido = document.getElementById("apellido").value;
+         function mostrarValores(){
+            document.getElementById("valores").innerHTML =nombre + " "+ apellido;
+            
+        }
+        
+    </script>
+</body>
+</html>
